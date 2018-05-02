@@ -1,0 +1,6 @@
+aws.*
+credentials.*
+secrets.*
+terraform.tfstate*
+*.pem*
+.terraform
