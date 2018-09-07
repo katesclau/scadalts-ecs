@@ -3,4 +3,5 @@ credentials.*
 secrets.*
 terraform.tfstate*
 *.pem*
+*.ppk*
 .terraform

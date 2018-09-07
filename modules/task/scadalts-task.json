@@ -1,0 +1,32 @@
+[
+  {
+    "name": "scadalts",
+    "image": "katesclau/scadalts-dev:0.0.9.4",
+    "cpu": 1,
+    "memory": 512,
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 8080,
+        "protocol": "tcp",
+        "hostPort": 8080
+      },
+      {
+        "containerPort": 8443,
+        "protocol": "tcp",
+        "hostPort": 8443
+      }
+    ],
+    "entryPoint": [
+      "/tmp/start.sh"
+    ],
+    "environment": [
+        {
+            "name": "DOCKER_HOST_IP",
+            "value": "127.0.0.1"
+        }
+    ],
+    "workingDirectory": "/tmp",
+    "logConfiguration": null
+  }
+]

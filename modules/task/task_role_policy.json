@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecs:DeregisterTaskDefinition",
+                "ecs:SubmitTaskStateChange",
+                "ecs:UpdateService",
+                "ecs:CreateService",
+                "ecs:RunTask",
+                "ecs:RegisterTaskDefinition",
+                "ecs:StartTask",
+                "ecs:DeleteService",
+                "ecs:StopTask",
+                "ecs:DescribeTaskDefinition"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

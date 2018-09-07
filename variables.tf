@@ -3,6 +3,8 @@ variable "vpc_cidr" {
   description = "Our VPC to be configured"
 }
 
+variable "debug" {  default = "true"  }
+
 variable "environment" {
   default = "scadalts"
   description = "Our environment description"
@@ -17,7 +19,7 @@ variable "private_subnet_cidrs" {
 }
 
 variable "availability_zones" {
-  default = ["eu-west-1a", "eu-west-1b"]
+  default = ["sa-east-1a", "sa-east-1c"]
 }
 
 variable "max_size" {
@@ -25,7 +27,7 @@ variable "max_size" {
 }
 
 variable "min_size" {
-  default = "1"
+  default = "0"
 }
 
 variable "desired_capacity" {
